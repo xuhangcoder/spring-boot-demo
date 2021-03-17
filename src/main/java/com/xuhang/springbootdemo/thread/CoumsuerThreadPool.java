@@ -60,14 +60,14 @@ public class CoumsuerThreadPool {
                 System.out.println("线程池退出了");
             }
         };
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 500; i++) {
             Mytask myTask = new Mytask("TASK_GEYM-"+i);
             executor.execute(myTask);
-            try {
-                Thread.sleep(10);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+//            try {
+//                Thread.sleep(10000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
         }
 
         executor.shutdown();

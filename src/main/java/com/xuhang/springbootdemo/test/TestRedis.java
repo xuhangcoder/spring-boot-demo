@@ -13,7 +13,7 @@ import java.util.Map;
  * @author xuhang
  * @date 2020/5/7 15:01
  */
-@Component
+//@Component
 public class TestRedis {
     @Autowired
     StringRedisTemplate stringredisTemplate;

@@ -49,8 +49,8 @@ public class PingHost {
 //            btt.start();
 
         //测试runnable方式
-        for (int i =147; i < 300; i++) {
-            MultiThreadByRunnable mtb =new MultiThreadByRunnable("10.40.96." + i);
+        for (int i =0; i < 300; i++) {
+            MultiThreadByRunnable mtb =new MultiThreadByRunnable("172.16.10." + i);
             new Thread(mtb).start();
 
         }
