@@ -1,5 +1,7 @@
 package com.xuhang.springbootdemo.jvm;
 
+import sun.misc.Contended;
+
 import java.lang.ref.SoftReference;
 import java.util.concurrent.TimeUnit;
 

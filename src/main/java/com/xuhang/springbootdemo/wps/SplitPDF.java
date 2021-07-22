@@ -9,6 +9,8 @@ import com.itextpdf.text.pdf.PdfReader;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author xuhang
@@ -53,6 +55,7 @@ public class SplitPDF {
         System.out.println("已处理完毕");
     }
     public static void main(String[] args) {
-        splitPDFFile("F:\\docs\\1.pdf","F:\\docs\\2.pdf",1,5);
+        int i = 12;
+        System.out.println(i+=i-=i*=i);
     }
 }
